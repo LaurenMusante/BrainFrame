@@ -28,6 +28,7 @@ _First draft wireframe for project:_
 	alt="Project wireframe"
 	style="float: center" 
 	height= "200" />  
+_red boxes indicate stretch goals at this point_
 
 ## Setup/Installation Requirements
 
