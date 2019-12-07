@@ -31,7 +31,10 @@ _First draft wireframe for project:_
 
 ## Setup/Installation Requirements
 
-_Clone [this repository](https://github.com/LaurenMusante/Kombucha-House) to your desktop. Navigate to the root directory in Terminal, then run "npm install" to install all packages and plug-ins needed. Once this step is complete, run "npm run start" in Terminal, and then alt-click on " http://localhost:8083/". Alternatively, you can copy " http://localhost:8083/" into your browser to view the page._
+PAGE CONTENT IS NOT UP AND RUNNING YET 12/6/19
+
+_Clone [this repository](https://github.com/LaurenMusante/BrainFrame) to your desktop. Navigate to the root directory in Terminal, then run "npm install" to install all packages and plug-ins needed. Once this step is complete, run "npm run start" in Terminal, and then alt-click on " http://localhost:8083/". Alternatively, you can copy " http://localhost:8083/" into your browser to view the page._
+
 
 ## Known Bugs
 
