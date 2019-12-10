@@ -7,6 +7,8 @@ function StudioCalendarPage() {
       <table>
         <tr>
           <th>Date</th>
+          <th>Time</th>
+          <th>Sign In</th> //reroute to CLientDisplayPage
           <th>Class</th>
           <th>Teacher</th>
           <th>Location</th>
