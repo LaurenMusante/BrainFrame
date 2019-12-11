@@ -1,35 +1,46 @@
 import React from 'react';
-import Suggestions from './Suggestions';
 
-class ClientSearchBar extends React.Component {
+class  ClientSearchBar extends React.Component {
   constructor(props){
-  this.state ={
-    query: '',
-    results: []
-    };
+    super(props)
+    this.state = {
+    initialItems: [],
+    items: []
+  }
+}
+
+   FilterList(event){
+    let items = this.state.initialItems;
+    items = items.filter((item) => {
+      return item.toLowerCase().search(event.target.value.toLowerCase()) !== -1;
+    });
+    this.setState({ items: items });
   }
 
-  handleInputChange = () => {
+  componentWillMount(){ //to store collection in state. called after initial render.
     this.setState({
-      query: this.search.value
+      initialItems: this.props.content,
+      items: this.props.content
     })
   }
 
   render() {
     return (
       <div>
-          <form>
-            <input
-            placeholder='Enter client name'
-            ref={input => this.search = input}
-            onChange={this.handleInputChange}
-            />
-            <SearchSuggestions results = {this.state.results} />
-          </form>
+        <form>
+          <input type="text" placeholder="Search" onChange={this.filterList} />
+        </form>
+        <div>
+          {
+            this.state.items.map(function (item) {
+              return <div key={item}>{item}</div>
+            })
+          }
+        </div>
       </div>
-      )
-    }
+    );
   }
+};
 
 
 export default ClientSearchBar;

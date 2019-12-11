@@ -2,6 +2,7 @@ import React from 'react';
 // import Client from './Client' <--in order to map through?
 import ClientSearchBar from './ClientSearchBar'
 
+
 const clientList = [{
   id: 1,
   name: 'Lauren Musante',
@@ -21,6 +22,7 @@ const clientList = [{
 
 class ClientDisplayPage extends React.Component {
   constructor(props) {
+    super(props)
     this.state = {
 
     }

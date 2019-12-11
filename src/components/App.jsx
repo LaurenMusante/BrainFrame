@@ -1,7 +1,9 @@
 import React from 'react';
-// import { Switch, Route } from 'react-router-dom' - from syllabus;
+import { Switch, Route } from 'react-router-dom';
 import ClassCalendarPage from './ClassCalendarPage';
 import ClientDisplayPage from './ClientDisplayPage';
+import PointOfSalePage from './PointOfSalePage'
+import ClientSearchBar from './ClientSearchBar';
 
 class App extends React.Component {
 	constructor(props) {
@@ -10,13 +12,13 @@ class App extends React.Component {
 				clients: [
 					{
 						id: 1,
-						name: Lauren,
+						name: 'Lauren',
 						phone: 1234567,
 						classpackage: false
-					}
+					},
 					{
 						id: 2,
-						name: Douglas,
+						name: 'Douglas',
 						phone: 2345678,
 						classpackage: true
 					}
@@ -28,11 +30,20 @@ class App extends React.Component {
 //functions here
 
 render(){
+	const foods = 
+	[
+		"Pickle",
+		"Burrito",
+		"Pho",
+		"Eggs",
+	]
 	return(
 		<div>
       <Switch>
+				<ClientSearchBar content={foods} />
         <Route exact path='/' component={ClassCalendarPage} />
         <Route path='/clientdisplay' component={ClientDisplayPage} />
+				<Route path='/pos' component={PointOfSalePage} />
       </Switch>
 		</div>
 		);
