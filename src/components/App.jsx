@@ -1,4 +1,7 @@
 import React from 'react';
+// import { Switch, Route } from 'react-router-dom' - from syllabus;
+import ClassCalendarPage from './ClassCalendarPage';
+import ClientDisplayPage from './ClientDisplayPage';
 
 class App extends React.Component {
 	constructor(props) {
@@ -27,7 +30,10 @@ class App extends React.Component {
 render(){
 	return(
 		<div>
-			//components here
+      <Switch>
+        <Route exact path='/' component={ClassCalendarPage} />
+        <Route path='/clientdisplay' component={ClientDisplayPage} />
+      </Switch>
 		</div>
 		);
 	}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const classPackages = [{
   id: 1,
@@ -75,6 +76,8 @@ class PointOfSalePage extends React.Component {
               }
                   <button type='submit' onSubmit={handleSubmit}>Add Package</button>
               </form>
+              <Link to='/clientdisplay'>BACK</Link>
+              <Link to='/'>Class Calendar</Link> 
           </div>
       </div>
     )
