@@ -5,6 +5,20 @@ import ClientDisplayPage from './ClientDisplayPage';
 import PointOfSalePage from './PointOfSalePage'
 import ClientSearchBar from './ClientSearchBar';
 
+const clientList = [{
+  id: 1,
+  name: "Lauren"
+}, {
+  id: 2,
+  name: "Douglas"
+}, {
+  id: 3,
+  name: "Sue"
+}, {
+  id: 4,
+  name: "Grail"
+}]
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -39,8 +53,8 @@ render(){
 	]
 	return(
 		<div>
+				<ClientSearchBar />
       <Switch>
-				<ClientSearchBar content={foods} />
         <Route exact path='/' component={ClassCalendarPage} />
         <Route path='/clientdisplay' component={ClientDisplayPage} />
 				<Route path='/pos' component={PointOfSalePage} />
