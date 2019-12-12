@@ -1,33 +1,66 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Table } from 'semantic-ui-react'
 
-function ClassCalendarPage() {
-	return(
-		<div>
-			<table width = '100%'>
-				<tr>
-					<th>Client Name</th>
-					<th>E-mail</th>
-					<th>Phone #</th>
-					{/* <th>Payment Type</th>
-            <th>Exp. Date</th>
-            <th>Remaining</th>
-						<th>Signed In</th> */}
-				</tr>
-				<tr>
-					<td>name</td>
-					<td>email</td>
-					<td>phone</td>
-					{/* <td>{props.paymentType}</td>
-            <td>{props.expDate}</td>
-            <td>{props.remainingClasses}</td>
-						<td>{props.signedIn}</td> */}
-						<td><button> <Link to='/pos'> BUY</Link></button></td>
-				</tr>
-			</table>
+const TableExampleCelled = () => (
+  <Table celled>
+    <Table.Header>
+      <Table.Row>
+        <Table.HeaderCell>Name</Table.HeaderCell>
+        <Table.HeaderCell>Status</Table.HeaderCell>
+        <Table.HeaderCell>Notes</Table.HeaderCell>
+      </Table.Row>
+    </Table.Header>
+
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>John</Table.Cell>
+        <Table.Cell>Approved</Table.Cell>
+        <Table.Cell>None</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Jamie</Table.Cell>
+        <Table.Cell>Approved</Table.Cell>
+        <Table.Cell>Requires call</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Jill</Table.Cell>
+        <Table.Cell>Denied</Table.Cell>
+        <Table.Cell>None</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+
+    <Table.Footer>
+      <Table.Row>
+        <Table.HeaderCell>3 People</Table.HeaderCell>
+        <Table.HeaderCell>2 Approved</Table.HeaderCell>
+        <Table.HeaderCell />
+      </Table.Row>
+    </Table.Footer>
+  </Table>
+)
+
+export default TableExampleCelled
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+
+
+
+// function ClassCalendarPage() {
+// 	return(
+// 		<div>
+
 			
-		</div>
-	);
-}
+// 		</div>
+// 	);
+// }
 
-export default ClassCalendarPage;
+// export default ClassCalendarPage;
