@@ -1,5 +1,9 @@
 import React from 'react';
 import ClientSearchBar from './ClientSearchBar'
+import Checkbox from './Checkbox';
+import { Icon, Menu, Table } from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
+
 
 class ClientDisplayPage extends React.Component {
   constructor(props) {
@@ -31,29 +35,56 @@ class ClientDisplayPage extends React.Component {
                 <Table.Cell>Lauren Musante</Table.Cell>
                 <Table.Cell>Lauren@mail.com</Table.Cell>
                 <Table.Cell>1234567890</Table.Cell>
-                <Table.Cell>Checkbox here</Table.Cell>
-                <Table.Cell>BUY button here</Table.Cell>
+                <Table.Cell>
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Yes</span>
+                      </label>
+                    </p>
+                  </form>
+                </Table.Cell>
+                <Table.Cell><Link to ='/pos'>BUY CLASS</Link></Table.Cell>
               </Table.Row>
               <Table.Row>
               <Table.Cell>Lauren Musante</Table.Cell>
                 <Table.Cell>Lauren@mail.com</Table.Cell>
                 <Table.Cell>1234567890</Table.Cell>
-                <Table.Cell>Checkbox here</Table.Cell>
-                <Table.Cell>BUY button here</Table.Cell>
+                <Table.Cell>
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Yes</span>
+                      </label>
+                    </p>
+                  </form>
+                </Table.Cell>
+                <Table.Cell><Link to ='/pos'>BUY CLASS</Link></Table.Cell>
               </Table.Row>
               <Table.Row>
               <Table.Cell>Lauren Musante</Table.Cell>
                 <Table.Cell>Lauren@mail.com</Table.Cell>
                 <Table.Cell>1234567890</Table.Cell>
-                <Table.Cell>Checkbox here</Table.Cell>
-                <Table.Cell>BUY button here</Table.Cell>
+                <Table.Cell>
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Yes</span>
+                      </label>
+                    </p>
+                  </form>
+                </Table.Cell>
+                <Table.Cell><Link to ='/pos'>BUY CLASS</Link></Table.Cell>
               </Table.Row>
             </Table.Body>
 
             <Table.Footer>
               <Table.Row>
-                <Table.HeaderCell colSpan='3'>
-                  <Menu floated='right' pagination>
+                <Table.HeaderCell colSpan='12'>
+                  <Menu pagination>
                     <Menu.Item as='a' icon>
                       <Icon name='chevron left' />
                     </Menu.Item>
@@ -77,3 +108,5 @@ class ClientDisplayPage extends React.Component {
 
 export default ClientDisplayPage;
 
+// https://materializecss.com/checkboxes.html for checkboxes
+// Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label.

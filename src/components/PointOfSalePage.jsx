@@ -1,23 +1,24 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
-const classPackages = [{
-  id: 1,
-  name: '1 class',
-  count: 1,
-  price: 20
-}, {
-  id: 2,
-  name: '5 classes',
-  count: 5,
-  price: 90
-}, {
-  id: 3,
-  name: '10 classes',
-  count: 10,
-  price: 180
-}]
+// import { HashRouter } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+
+// const classPackages = [{
+//   id: 1,
+//   name: '1 class',
+//   count: 1,
+//   price: 20
+// }, {
+//   id: 2,
+//   name: '5 classes',
+//   count: 5,
+//   price: 90
+// }, {
+//   id: 3,
+//   name: '10 classes',
+//   count: 10,
+//   price: 180
+// }]
 
 class PointOfSalePage extends React.Component {
   constructor(props) {
@@ -80,7 +81,7 @@ class PointOfSalePage extends React.Component {
               <Link to='/clientdisplay'>BACK</Link>
               <Link to='/'>Class Calendar</Link>  */}
           </div>
-    )
+    );
   }
 }
 

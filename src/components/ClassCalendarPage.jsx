@@ -2,6 +2,7 @@ import React from 'react'
 import { Icon, Label, Menu, Table } from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 
+
 const ClassCalendarPage = () => (
   <Table celled>
     <Table.Header>
@@ -44,7 +45,7 @@ const ClassCalendarPage = () => (
 
     <Table.Footer>
       <Table.Row>
-        <Table.HeaderCell colSpan='3'>
+        <Table.HeaderCell colSpan='12'>
           <Menu pagination>
             <Menu.Item as='a' icon>
               <Icon name='chevron left' />
