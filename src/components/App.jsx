@@ -4,9 +4,8 @@ import axios from 'axios';
 import ClassCalendarPage from './ClassCalendarPage';
 import ClientDisplayPage from './ClientDisplayPage';
 import PointOfSalePage from './PointOfSalePage'
-import ClientSearchBar from './ClientSearchBar';
 import Header from './Header';
-
+import NewClientForm from './NewClientForm'
 
 class App extends React.Component {
 	constructor(props) {
@@ -31,9 +30,7 @@ render(){
 	return(
 		<div className='app'>
       <Header />
-      <div className='ui container' style={{ marginTop: '10px' }}>
-			  <ClientSearchBar onSubmit={this.onSearchSubmit} />
-      </div>
+      <NewClientForm />
       <Switch>
         <Route exact path='/' component={ClassCalendarPage} />
         <Route path='/clientdisplay' component={ClientDisplayPage} />

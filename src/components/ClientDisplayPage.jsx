@@ -15,7 +15,7 @@ class ClientDisplayPage extends React.Component {
   render() {
     return(
       <div className="clientDisplay"> 
-        <div className='clientSearch'>
+        <div className='ui container' style={{ marginTop: '10px' }}>
           <ClientSearchBar /> 
         </div> 
         <div className='clientTable'>
