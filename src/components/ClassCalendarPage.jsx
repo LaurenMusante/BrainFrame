@@ -1,5 +1,6 @@
 import React from 'react'
-import { Icon, Label, Menu, Table } from 'semantic-ui-react'
+import { Icon, Label, Menu, Table } from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
 
 const ClassCalendarPage = () => (
   <Table celled>
@@ -17,7 +18,7 @@ const ClassCalendarPage = () => (
     <Table.Body>
       <Table.Row>
         <Table.Cell>December  12, 2019</Table.Cell>
-        <Table.Cell>Link to ClientDisplayPage</Table.Cell>
+        <Table.Cell><Link to='/clientdisplay'>Link to ClientDisplayPage</Link></Table.Cell>
         <Table.Cell>9am-10am</Table.Cell>
         <Table.Cell>Deep Flow</Table.Cell>
         <Table.Cell>Emma Stern</Table.Cell>
@@ -25,7 +26,7 @@ const ClassCalendarPage = () => (
       </Table.Row>
       <Table.Row>
         <Table.Cell>December  12, 2019</Table.Cell>
-      <Table.Cell>Link to ClientDisplayPage</Table.Cell>
+        <Table.Cell><Link to='/clientdisplay'>Link to ClientDisplayPage</Link></Table.Cell>
         <Table.Cell>9am-10am</Table.Cell>
         <Table.Cell>Deep Flow</Table.Cell>
         <Table.Cell>Emma Stern</Table.Cell>
@@ -33,7 +34,7 @@ const ClassCalendarPage = () => (
       </Table.Row>
       <Table.Row>
         <Table.Cell>December  12, 2019</Table.Cell>
-        <Table.Cell>Link to ClientDisplayPage</Table.Cell>
+        <Table.Cell><Link to='/clientdisplay'>Link to ClientDisplayPage</Link></Table.Cell>
         <Table.Cell>9am-10am</Table.Cell>
         <Table.Cell>Deep Flow</Table.Cell>
         <Table.Cell>Emma Stern</Table.Cell>

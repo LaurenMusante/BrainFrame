@@ -11,7 +11,7 @@ render() {
     <div className="ui segment">
       <form className="ui form">
         <div className="field">
-        <label>Client Search</label>
+          <label>Client Search</label>
           <input type="text"/>
         </div>
       </form>
