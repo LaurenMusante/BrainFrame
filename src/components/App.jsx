@@ -5,6 +5,7 @@ import ClassCalendarPage from './ClassCalendarPage';
 import ClientDisplayPage from './ClientDisplayPage';
 import PointOfSalePage from './PointOfSalePage'
 import ClientSearchBar from './ClientSearchBar';
+import Header from './Header';
 
 
 class App extends React.Component {
@@ -29,6 +30,7 @@ class App extends React.Component {
 render(){
 	return(
 		<div className='app'>
+      <Header />
       <div className='ui container' style={{ marginTop: '10px' }}>
 			  <ClientSearchBar onSubmit={this.onSearchSubmit} />
       </div>
