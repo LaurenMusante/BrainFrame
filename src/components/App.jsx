@@ -30,7 +30,6 @@ render(){
 	return(
 		<div className='app'>
       <Header />
-      <NewClientForm />
       <Switch>
         <Route exact path='/' component={ClassCalendarPage} />
         <Route path='/clientdisplay' component={ClientDisplayPage} />
