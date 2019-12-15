@@ -31,10 +31,30 @@ class PointOfSalePage extends React.Component {
       quantity: 1,
       selectedClassPackage: {},
       subtotal: 0, //selectedClassPackage price * quantity
-      total: 0 //adding tax or discoumt to subtotal
+      total: 0, //adding tax or discoumt to subtotal
+      client: {}
     };
   }
 
+  updateClient() {
+    const currentClient = this.props.clients.find(
+      client => client.id === this.props.match.params.clientId
+    );
+    if (currentClient) {
+      this.setState({ client: currentClient });
+    }
+  }
+
+  componentDidMount() {
+    this.updateClient();
+  }
+
+  //think of "match" as the word "route"
+  componentDidUpdate(prevProps) {
+    if (this.props.match.params.clientId !== prevProps.match.params.clientId) {
+      this.updateClient();
+    }
+  }
   handleSubmit() {
     console.log("peeps");
   }
@@ -51,23 +71,22 @@ class PointOfSalePage extends React.Component {
     return (
       <div className="point-of-sale-page">
         <div className="client-details">
-          <h1>Lauren Musante</h1>
+          <h1>{this.state.client.name}</h1>
         </div>
 
         <form onSubmit={this.handleSubmit}>
-          <label>Class Packages</label>
-          <select
-            name="package-name"
-            onChange={this.handleSelectChange}
-            value={this.state.selectedClassPackage}
-          >
-            <option>---</option>
-            {classPackages.map(({ id, name }) => (
-              <option key={id} value={id}>
-                {name}
-              </option>
-            ))}
-          </select>
+          <div className="ui selection dropdown">
+            <input type="hidden" name="package-name" />
+            <i className="dropdown icon"></i>
+            <div className="default text">---</div>
+            <div className="menu">
+              {classPackages.map(({ id, name }) => (
+                <div className="item" key={id} data-value={id}>
+                  {name}
+                </div>
+              ))}
+            </div>
+          </div>
 
           {this.selectedClassPackage === {} ? null : (
             <div>
