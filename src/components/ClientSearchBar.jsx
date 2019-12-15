@@ -1,26 +1,29 @@
-import React from 'react';
+import React from "react";
 
-class  ClientSearchBar extends React.Component {
+class ClientSearchBar extends React.Component {
   constructor(props) {
     super(props);
-      this.state = {
+    this.state = {};
   }
-}
 
-onInputChange(event){
-  console.log(event.target.value);
-}
+  onInputChange(event) {
+    console.log(event.target.value);
+  }
 
-render() {
-  return(
-    <div className="ui segment">
-      <form className="ui form">
-        <div className="field">
-          <label>Client Search</label>
-          <input type="text" onChange={this.onInputChange} style={{boxSizing: 'border-box'}}/>
-        </div>
-      </form>
-    </div>
+  render() {
+    return (
+      <div className="ui segment">
+        <form className="ui form">
+          <div className="field">
+            <label>Client Search</label>
+            <input
+              type="text"
+              onChange={this.onInputChange}
+              style={{ boxSizing: "border-box" }}
+            />
+          </div>
+        </form>
+      </div>
     );
   }
 }
@@ -31,7 +34,6 @@ export default ClientSearchBar;
 // Add client to <ClientDisplaySheet/>
 // If client's first visit, dropdown from bar to "Addclient", which will take you to <newClientForm/>
 //https://dev.to/sage911/how-to-write-a-search-component-with-suggestions-in-react-d20
-
 
 // constructor(props) {
 //   super(props);

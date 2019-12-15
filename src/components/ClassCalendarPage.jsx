@@ -1,7 +1,6 @@
-import React from 'react'
-import { Icon, Label, Menu, Table } from 'semantic-ui-react';
-import {Link} from 'react-router-dom';
-
+import React from "react";
+import { Icon, Label, Menu, Table } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 const ClassCalendarPage = () => (
   <Table celled>
@@ -18,24 +17,30 @@ const ClassCalendarPage = () => (
 
     <Table.Body>
       <Table.Row>
-        <Table.Cell>December  12, 2019</Table.Cell>
-        <Table.Cell><Link to='/clientdisplay'>Link to ClientDisplayPage</Link></Table.Cell>
+        <Table.Cell>December 12, 2019</Table.Cell>
+        <Table.Cell>
+          <Link to="/clientdisplay">Link to ClientDisplayPage</Link>
+        </Table.Cell>
         <Table.Cell>9am-10am</Table.Cell>
         <Table.Cell>Deep Flow</Table.Cell>
         <Table.Cell>Emma Stern</Table.Cell>
         <Table.Cell>MOD on 45th</Table.Cell>
       </Table.Row>
       <Table.Row>
-        <Table.Cell>December  12, 2019</Table.Cell>
-        <Table.Cell><Link to='/clientdisplay'>Link to ClientDisplayPage</Link></Table.Cell>
+        <Table.Cell>December 12, 2019</Table.Cell>
+        <Table.Cell>
+          <Link to="/clientdisplay">Link to ClientDisplayPage</Link>
+        </Table.Cell>
         <Table.Cell>9am-10am</Table.Cell>
         <Table.Cell>Deep Flow</Table.Cell>
         <Table.Cell>Emma Stern</Table.Cell>
         <Table.Cell>MOD on 45th</Table.Cell>
       </Table.Row>
       <Table.Row>
-        <Table.Cell>December  12, 2019</Table.Cell>
-        <Table.Cell><Link to='/clientdisplay'>Link to ClientDisplayPage</Link></Table.Cell>
+        <Table.Cell>December 12, 2019</Table.Cell>
+        <Table.Cell>
+          <Link to="/clientdisplay">Link to ClientDisplayPage</Link>
+        </Table.Cell>
         <Table.Cell>9am-10am</Table.Cell>
         <Table.Cell>Deep Flow</Table.Cell>
         <Table.Cell>Emma Stern</Table.Cell>
@@ -45,33 +50,25 @@ const ClassCalendarPage = () => (
 
     <Table.Footer>
       <Table.Row>
-        <Table.HeaderCell colSpan='12'>
+        <Table.HeaderCell colSpan="12">
           <Menu pagination>
-            <Menu.Item as='a' icon>
-              <Icon name='chevron left' />
+            <Menu.Item as="a" icon>
+              <Icon name="chevron left" />
             </Menu.Item>
-            <Menu.Item as='a'>1</Menu.Item>
-            <Menu.Item as='a'>2</Menu.Item>
-            <Menu.Item as='a'>3</Menu.Item>
-            <Menu.Item as='a'>4</Menu.Item>
-            <Menu.Item as='a' icon>
-              <Icon name='chevron right' />
+            <Menu.Item as="a">1</Menu.Item>
+            <Menu.Item as="a">2</Menu.Item>
+            <Menu.Item as="a">3</Menu.Item>
+            <Menu.Item as="a">4</Menu.Item>
+            <Menu.Item as="a" icon>
+              <Icon name="chevron right" />
             </Menu.Item>
           </Menu>
         </Table.HeaderCell>
       </Table.Row>
     </Table.Footer>
   </Table>
-)
+);
 
 export default ClassCalendarPage;
 
-
 // https://react.semantic-ui.com/collections/table/
-
-
-
-
-
-
-

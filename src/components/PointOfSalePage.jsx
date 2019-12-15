@@ -1,24 +1,28 @@
-import React from 'react';
+import React from "react";
 
-// import { HashRouter } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-// const classPackages = [{
-//   id: 1,
-//   name: '1 class',
-//   count: 1,
-//   price: 20
-// }, {
-//   id: 2,
-//   name: '5 classes',
-//   count: 5,
-//   price: 90
-// }, {
-//   id: 3,
-//   name: '10 classes',
-//   count: 10,
-//   price: 180
-// }]
+const classPackages = [
+  {
+    id: 1,
+    name: "1 class",
+    count: 1,
+    price: 20
+  },
+  {
+    id: 2,
+    name: "5 classes",
+    count: 5,
+    price: 90
+  },
+  {
+    id: 3,
+    name: "10 classes",
+    count: 10,
+    price: 180
+  }
+];
 
 class PointOfSalePage extends React.Component {
   constructor(props) {
@@ -28,59 +32,88 @@ class PointOfSalePage extends React.Component {
       selectedClassPackage: {},
       subtotal: 0, //selectedClassPackage price * quantity
       total: 0 //adding tax or discoumt to subtotal
-      };  
-    }
-    
+    };
+  }
+
   handleSubmit() {
-    console.log('peeps');
+    console.log("peeps");
+  }
+
+  handleSelectChange() {
+    console.log("select changed");
+  }
+
+  handleOnChange() {
+    console.log("handle input change");
   }
 
   render() {
     return (
-      <div className='point-of-sale-page'>
-        <p> HIHIHIH</p>
-
-        {/* <div className="client-details">
+      <div className="point-of-sale-page">
+        <div className="client-details">
           <h1>Lauren Musante</h1>
         </div>
 
-          <form>
-            <label for='package-name'>Class Packages</label>
-            <select name='package-name'>
-              <option>---</option>
-              {classPackages.map(({id, name}) => (
-                <option key={id} value={id}>{name}</option>
-                ))}
-            </select>
+        <form onSubmit={this.handleSubmit}>
+          <label>Class Packages</label>
+          <select
+            name="package-name"
+            onChange={this.handleSelectChange}
+            value={this.state.selectedClassPackage}
+          >
+            <option>---</option>
+            {classPackages.map(({ id, name }) => (
+              <option key={id} value={id}>
+                {name}
+              </option>
+            ))}
+          </select>
 
-            {(this.selectedClassPackage === {})
-              ? null
-              : (
+          {this.selectedClassPackage === {} ? null : (
+            <div>
+              <div className="pricingDetails">
                 <div>
-                  <div className='pricingDetails'>
-                    <div>
-                      <label for='price'>Price</label>
-                      <input type='text' value={this.pkg.price} name='price' />
-                    </div>
-                    <div>
-                      <label for='count'>Class Count</label>
-                      <input type='number' value={this.pkg.count} name='count' />
-                    </div>
-                    <div>
-                      <label for='quantity'>Quantity</label>
-                      <input type='number' value={this.state.quantity} name='quantity' />
-                    </div>
-                      <h3>Subtotal <span>{this.state.subtotal}</span></h3> 
-                    </div>
-                    <h2>Total <span>{this.state.total}</span></h2>
+                  <label>
+                    Price
+                    <input
+                      type="text"
+                      value={this.state.selectedClassPackage.price}
+                      name="price"
+                      onChange={this.handleOnChange}
+                    />
+                  </label>
                 </div>
-              )
-              }
-                  <button type='submit' onSubmit={handleSubmit}>Add Package</button>
-              </form>
-              <Link to='/clientdisplay'>BACK</Link>
-              <Link to='/'>Class Calendar</Link>  */}
-          </div>
+                <div>
+                  <div>
+                    Class Count
+                    {this.state.selectedClassPackage.count}
+                  </div>
+                </div>
+                <div>
+                  <label>
+                    Quantity
+                    <input
+                      type="number"
+                      value={this.state.quantity}
+                      name="quantity"
+                      onChange={this.handleOnChange}
+                    />
+                  </label>
+                </div>
+                <h3>
+                  Subtotal <span>{this.state.subtotal}</span>
+                </h3>
+              </div>
+              <h2>
+                Total <span>{this.state.total}</span>
+              </h2>
+            </div>
+          )}
+          <button type="submit">Add Package</button>
+        </form>
+        <Link to="/clientdisplay">BACK</Link>
+        <Link to="/">Class Calendar</Link>
+      </div>
     );
   }
 }
