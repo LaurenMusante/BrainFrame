@@ -9,13 +9,33 @@ class ClientDisplayPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      clients: [{
+        id: 1,
+        name: 'Douglas',
+        email: 'Douglas@mail.com',
+        phone: '(123)123-4567'
+      },
+      {
+        id: 2,
+        name: 'Lauren',
+        email: 'Lauren@mail.com',
+        phone: '(321)123-4567'
+      },
+      {
+        id: 3,
+        name: 'Ham',
+        email: 'Ham@ham.com',
+        phone: '(333)666-6666'
+      }
+    ]
+    
 
     }
   }
   render() {
     return(
       <div className="clientDisplay"> 
-        <div className='ui container' style={{ marginTop: '10px' }}>
+        <div className='ui container' style={{ margin: '24px'}}>
           <ClientSearchBar /> 
         </div> 
         <div className='clientTable'>
@@ -31,54 +51,24 @@ class ClientDisplayPage extends React.Component {
             </Table.Header>
 
             <Table.Body>
-              <Table.Row>
-                <Table.Cell>Lauren Musante</Table.Cell>
-                <Table.Cell>Lauren@mail.com</Table.Cell>
-                <Table.Cell>1234567890</Table.Cell>
-                <Table.Cell>
-                  <form action="#">
-                    <p>
-                      <label>
-                        <input type="checkbox" />
-                        <span>Yes</span>
-                      </label>
-                    </p>
-                  </form>
-                </Table.Cell>
-                <Table.Cell><Link to ='/pos'>BUY CLASS</Link></Table.Cell>
-              </Table.Row>
-              <Table.Row>
-              <Table.Cell>Lauren Musante</Table.Cell>
-                <Table.Cell>Lauren@mail.com</Table.Cell>
-                <Table.Cell>1234567890</Table.Cell>
-                <Table.Cell>
-                <form action="#">
-                    <p>
-                      <label>
-                        <input type="checkbox" />
-                        <span>Yes</span>
-                      </label>
-                    </p>
-                  </form>
-                </Table.Cell>
-                <Table.Cell><Link to ='/pos'>BUY CLASS</Link></Table.Cell>
-              </Table.Row>
-              <Table.Row>
-              <Table.Cell>Lauren Musante</Table.Cell>
-                <Table.Cell>Lauren@mail.com</Table.Cell>
-                <Table.Cell>1234567890</Table.Cell>
-                <Table.Cell>
-                <form action="#">
-                    <p>
-                      <label>
-                        <input type="checkbox" />
-                        <span>Yes</span>
-                      </label>
-                    </p>
-                  </form>
-                </Table.Cell>
-                <Table.Cell><Link to ='/pos'>BUY CLASS</Link></Table.Cell>
-              </Table.Row>
+              {this.state.clients.map(({id, name, email, phone}) => 
+                <Table.Row key={id}>
+                  <Table.Cell>{name}</Table.Cell>
+                  <Table.Cell>{email}</Table.Cell>
+                  <Table.Cell>{phone}</Table.Cell>
+                  <Table.Cell>
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Yes</span>
+                        </label>
+                      </p>
+                    </form>
+                  </Table.Cell>
+                  <Table.Cell><Link to='/pos'>BUY CLASS</Link></Table.Cell>
+                </Table.Row>
+              )}
             </Table.Body>
 
             <Table.Footer>

@@ -17,7 +17,7 @@ render() {
       <form className="ui form">
         <div className="field">
           <label>Client Search</label>
-          <input type="text" onChange={this.onInputChange}/>
+          <input type="text" onChange={this.onInputChange} style={{boxSizing: 'border-box'}}/>
         </div>
       </form>
     </div>
