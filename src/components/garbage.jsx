@@ -1,54 +1,76 @@
+{
+  /* <Table celled>
+    <Table.Header>
+      <Table.Row>
+        <Table.HeaderCell>Date</Table.HeaderCell>
+        <Table.HeaderCell>Sign-In</Table.HeaderCell>
+        <Table.HeaderCell>Time</Table.HeaderCell>
+        <Table.HeaderCell>Class</Table.HeaderCell>
+        <Table.HeaderCell>Instructor</Table.HeaderCell>
+        <Table.HeaderCell>Location</Table.HeaderCell>
+      </Table.Row>
+    </Table.Header>
 
-// FROM CLIENT DISPLAY PAGE
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>December 12, 2019</Table.Cell>
+        <Table.Cell>
+          <Link to="/clientdisplay">Sign In</Link>
+        </Table.Cell>
+        <Table.Cell>9am-10am</Table.Cell>
+        <Table.Cell>Deep Flow</Table.Cell>
+        <Table.Cell>Emma Stern</Table.Cell>
+        <Table.Cell>MOD on 45th</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>December 12, 2019</Table.Cell>
+        <Table.Cell>
+          <Link to="/clientdisplay">Sign In</Link>
+        </Table.Cell>
+        <Table.Cell>9am-10am</Table.Cell>
+        <Table.Cell>Deep Flow</Table.Cell>
+        <Table.Cell>Emma Stern</Table.Cell>
+        <Table.Cell>MOD on 45th</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>December 12, 2019</Table.Cell>
+        <Table.Cell>
+          <Link to="/clientdisplay">Sign In</Link>
+        </Table.Cell>
+        <Table.Cell>9am-10am</Table.Cell>
+        <Table.Cell>Deep Flow</Table.Cell>
+        <Table.Cell>Emma Stern</Table.Cell>
+        <Table.Cell>MOD on 45th</Table.Cell>
+      </Table.Row>
+    </Table.Body>
 
-// const clientList = [{
-//   id: 1,
-//   name: 'Lauren Musante',
-//   email: 'Lauren@gmail.com',
-//   phone: 1111111111
-// }, {
-//   id:2,
-//   name: 'Douglas Graves',
-//   email: 'Douglas@gmail.com',
-//   phone: 2222222222
-// }, {
-//   id: 3,
-//   name: 'Nina Anissimov',
-//   email: 'Nina@gmail.com',
-//   phone: 3333333333
-// }]
-  
-  // {clientList.map(({id, name, email, phone}) => 
-  //         <Client name={name}
-  //         email={email}
-  //         phone={phone}
-  //         key={id}
-  //         )}
-        // <table>
-        //   <tr>
-        //     <th>Client Name</th>
-        //     <th>E-mail</th>
-        //     <th>Phone #</th>
-        //     <th>Payment Type</th>
-        //     <th>Exp. Date</th>
-        //     <th>Remaining</th>
-        //     <th>Signed In</th>
-        //   </tr>
-        //   <tr>
-        //     <td>{props.name}</td>
-        //     <td>{props.email}</td>
-        //     <td>{props.phone}</td> 
-        //     <td>{props.paymentType}</td>
-        //     <td>{props.expDate}</td>
-        //     <td>{props.remainingClasses}</td>
-        //     <td>{props.signedIn}</td>
-        //   </tr>
-        // </table>
+    <Table.Footer>
+      <Table.Row>
+        <Table.HeaderCell colSpan="12">
+          <Menu pagination>
+            <Menu.Item as="a" icon>
+              <Icon name="chevron left" />
+            </Menu.Item>
+            <Menu.Item as="a">1</Menu.Item>
+            <Menu.Item as="a">2</Menu.Item>
+            <Menu.Item as="a">3</Menu.Item>
+            <Menu.Item as="a">4</Menu.Item>
+            <Menu.Item as="a" icon>
+              <Icon name="chevron right" />
+            </Menu.Item>
+          </Menu>
+        </Table.HeaderCell>
+      </Table.Row>
+    </Table.Footer>
+  </Table>
+); */
+}
 
-
-{/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+{
+  /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script> */}
+<script type="text/javascript" src="js/materialize.min.js"></script> */
+}

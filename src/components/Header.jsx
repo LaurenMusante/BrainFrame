@@ -1,13 +1,14 @@
 import React from "react";
+import "./Header.css";
 
 function Header() {
   return (
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo" style={{ marginLeft: "15px" }}>
+          <a href="#" className="brand-logo">
             {" "}
-            <i className="large material-icons" style={{ fontSize: "40px" }}>
+            <i className="material-icons" style={{ fontSize: "40px" }}>
               blur_on
             </i>
             BRAINFRAME

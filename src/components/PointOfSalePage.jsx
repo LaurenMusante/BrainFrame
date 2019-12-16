@@ -1,6 +1,4 @@
 import React from "react";
-
-import { HashRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const classPackages = [
@@ -69,69 +67,74 @@ class PointOfSalePage extends React.Component {
 
   render() {
     return (
-      <div className="point-of-sale-page">
-        <div className="client-details">
-          <h1>{this.state.client.name}</h1>
-        </div>
-
-        <form onSubmit={this.handleSubmit}>
-          <div className="ui selection dropdown">
-            <input type="hidden" name="package-name" />
-            <i className="dropdown icon"></i>
-            <div className="default text">---</div>
-            <div className="menu">
-              {classPackages.map(({ id, name }) => (
-                <div className="item" key={id} data-value={id}>
-                  {name}
-                </div>
-              ))}
-            </div>
+      <div className="ui container">
+        <div className="point-of-sale-page">
+          <div className="client-details">
+            <h1>{this.state.client.name}</h1>
           </div>
 
-          {this.selectedClassPackage === {} ? null : (
-            <div>
-              <div className="pricingDetails">
-                <div>
-                  <label>
-                    Price
-                    <input
-                      type="text"
-                      value={this.state.selectedClassPackage.price}
-                      name="price"
-                      onChange={this.handleOnChange}
-                    />
-                  </label>
+          <form onSubmit={this.handleSubmit}>
+            <div className="ui compact menu">
+              <div className="ui simple dropdown item">
+                Package Options
+                <i className="dropdown icon"></i>
+                <div className="menu">
+                  {classPackages.map(({ id, name }) => (
+                    <div className="item" key={id} data-value={id}>
+                      {name}
+                    </div>
+                  ))}
                 </div>
-                <div>
-                  <div>
-                    Class Count
-                    {this.state.selectedClassPackage.count}
-                  </div>
-                </div>
-                <div>
-                  <label>
-                    Quantity
-                    <input
-                      type="number"
-                      value={this.state.quantity}
-                      name="quantity"
-                      onChange={this.handleOnChange}
-                    />
-                  </label>
-                </div>
-                <h3>
-                  Subtotal <span>{this.state.subtotal}</span>
-                </h3>
               </div>
-              <h2>
-                Total <span>{this.state.total}</span>
-              </h2>
             </div>
-          )}
-          <button type="submit">Add Package</button>
-        </form>
-        <Link to="/clientdisplay">BACK</Link>
-        <Link to="/">Class Calendar</Link>
+
+            {this.selectedClassPackage === {} ? null : (
+              <div>
+                <div className="pricingDetails">
+                  <div>
+                    <label>
+                      Price
+                      <input
+                        type="text"
+                        value={this.state.selectedClassPackage.price}
+                        name="price"
+                        onChange={this.handleOnChange}
+                      />
+                    </label>
+                  </div>
+                  <div>
+                    <div>
+                      Class Count
+                      {this.state.selectedClassPackage.count}
+                    </div>
+                  </div>
+                  <div>
+                    <label>
+                      Quantity
+                      <input
+                        type="number"
+                        value={this.state.quantity}
+                        name="quantity"
+                        onChange={this.handleOnChange}
+                      />
+                    </label>
+                  </div>
+                  <h3>
+                    Subtotal <span>{this.state.subtotal}</span>
+                  </h3>
+                </div>
+                <h2>
+                  Total <span>{this.state.total}</span>
+                </h2>
+              </div>
+            )}
+            <button type="submit">Add Package</button>
+          </form>
+          <br />
+          <Link to="/clientdisplay">BACK</Link>
+          <br />
+          <Link to="/">Class Calendar</Link>
+        </div>
       </div>
     );
   }

@@ -1,74 +1,120 @@
 import React from "react";
 import { Icon, Label, Menu, Table } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import "./ClassCalendarPage.css";
 
 const ClassCalendarPage = () => (
-  <Table celled>
-    <Table.Header>
-      <Table.Row>
-        <Table.HeaderCell>Date</Table.HeaderCell>
-        <Table.HeaderCell>Sign-In</Table.HeaderCell>
-        <Table.HeaderCell>Time</Table.HeaderCell>
-        <Table.HeaderCell>Class</Table.HeaderCell>
-        <Table.HeaderCell>Instructor</Table.HeaderCell>
-        <Table.HeaderCell>Location</Table.HeaderCell>
-      </Table.Row>
-    </Table.Header>
-
-    <Table.Body>
-      <Table.Row>
-        <Table.Cell>December 12, 2019</Table.Cell>
-        <Table.Cell>
-          <Link to="/clientdisplay">Link to ClientDisplayPage</Link>
-        </Table.Cell>
-        <Table.Cell>9am-10am</Table.Cell>
-        <Table.Cell>Deep Flow</Table.Cell>
-        <Table.Cell>Emma Stern</Table.Cell>
-        <Table.Cell>MOD on 45th</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>December 12, 2019</Table.Cell>
-        <Table.Cell>
-          <Link to="/clientdisplay">Link to ClientDisplayPage</Link>
-        </Table.Cell>
-        <Table.Cell>9am-10am</Table.Cell>
-        <Table.Cell>Deep Flow</Table.Cell>
-        <Table.Cell>Emma Stern</Table.Cell>
-        <Table.Cell>MOD on 45th</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>December 12, 2019</Table.Cell>
-        <Table.Cell>
-          <Link to="/clientdisplay">Link to ClientDisplayPage</Link>
-        </Table.Cell>
-        <Table.Cell>9am-10am</Table.Cell>
-        <Table.Cell>Deep Flow</Table.Cell>
-        <Table.Cell>Emma Stern</Table.Cell>
-        <Table.Cell>MOD on 45th</Table.Cell>
-      </Table.Row>
-    </Table.Body>
-
-    <Table.Footer>
-      <Table.Row>
-        <Table.HeaderCell colSpan="12">
-          <Menu pagination>
-            <Menu.Item as="a" icon>
-              <Icon name="chevron left" />
-            </Menu.Item>
-            <Menu.Item as="a">1</Menu.Item>
-            <Menu.Item as="a">2</Menu.Item>
-            <Menu.Item as="a">3</Menu.Item>
-            <Menu.Item as="a">4</Menu.Item>
-            <Menu.Item as="a" icon>
-              <Icon name="chevron right" />
-            </Menu.Item>
-          </Menu>
-        </Table.HeaderCell>
-      </Table.Row>
-    </Table.Footer>
-  </Table>
+  <table className="ui celled padded table">
+    <thead className="tableHead">
+      <tr className="tableHeader">
+        <th className="boo">Date</th>
+        <th className="">Time</th>
+        <th className="">Sign In</th>
+        <th className="">Class</th>
+        <th className="">Instructor</th>
+        <th className="">Location</th>
+      </tr>
+    </thead>
+    <tbody className="">
+      <tr className="">
+        <td className="">December 16</td>
+        <td className="single line">9am</td>
+        <td className="single line">
+          <Link to="/clientdisplay">Sign In</Link>
+        </td>
+        <td className="single line">
+          <div
+            className="ui button"
+            data-tooltip="Deep Flow Yoga: Lateral Sequence is a sensational yoga practice that will bring the immediate and profound unwinding of mental and physical tension."
+            data-position="top center"
+            data-variation="wide"
+          >
+            Deep Flow
+          </div>
+        </td>
+        <td className="single line">Emma Stern</td>
+        <td className="single line">Mod at 45th</td>
+      </tr>
+      <tr className="">
+        <td className="">December 16</td>
+        <td className="single line">9am</td>
+        <td className="single line">
+          <Link to="/clientdisplay">Sign In</Link>
+        </td>
+        <td className="single line">
+          <div
+            className="ui button"
+            data-tooltip="Deep Flow Yoga: Lateral Sequence is a sensational yoga practice that will bring the immediate and profound unwinding of mental and physical tension."
+            data-position="top center"
+            data-variation="wide"
+          >
+            Flow
+          </div>
+        </td>
+        <td className="single line">Emma Stern</td>
+        <td className="single line">Mod at 45th</td>
+      </tr>
+      <tr className="">
+        <td className="">December 16</td>
+        <td className="single line">9am</td>
+        <td className="single line">
+          <Link to="/clientdisplay">Sign In</Link>
+        </td>
+        <td className="single line">
+          <div
+            className="ui button"
+            data-tooltip="Deep Flow Yoga: Lateral Sequence is a sensational yoga practice that will bring the immediate and profound unwinding of mental and physical tension."
+            data-position="top center"
+            data-variation="wide"
+          >
+            Flow
+          </div>
+        </td>
+        <td className="single line">Emma Stern</td>
+        <td className="single line">Mod at 45th</td>
+      </tr>
+      <tr className="">
+        <td className="">December 16</td>
+        <td className="single line">9am</td>
+        <td className="single line">
+          <Link to="/clientdisplay">Sign In</Link>
+        </td>
+        <td className="single line">
+          <div
+            className="ui button"
+            data-tooltip="Deep Flow Yoga: Lateral Sequence is a sensational yoga practice that will bring the immediate and profound unwinding of mental and physical tension."
+            data-position="top center"
+            data-variation="wide"
+          >
+            Flow
+          </div>
+        </td>
+        <td className="single line">Emma Stern</td>
+        <td className="single line">Mod at 45th</td>
+      </tr>
+      <tr className="">
+        <td className="">December 16</td>
+        <td className="single line">9am</td>
+        <td className="single line">
+          <Link to="/clientdisplay">Sign In</Link>
+        </td>
+        <td className="single line">
+          <div
+            className="ui button"
+            data-tooltip="Deep Flow Yoga: Lateral Sequence is a sensational yoga practice that will bring the immediate and profound unwinding of mental and physical tension."
+            data-position="top center"
+            data-variation="wide"
+          >
+            Flow
+          </div>
+        </td>
+        <td className="single line">Emma Stern</td>
+        <td className="single line">Mod at 45th</td>
+      </tr>
+    </tbody>
+  </table>
 );
 
 export default ClassCalendarPage;
 
-// https://react.semantic-ui.com/collections/table/
+// https://react.semantic-ui.com/collections/table/ html version for easier styling

@@ -1,0 +1,15 @@
+table {
+  background-color: blue;
+}
+
+tbody {
+  background-color: #eae2d6;
+}
+
+thead.tableHead {
+  background-color: blue;
+}
+
+.boo {
+  background-color: blue;
+}
