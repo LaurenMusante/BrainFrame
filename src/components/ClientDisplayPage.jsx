@@ -50,20 +50,7 @@ class ClientDisplayPage extends React.Component {
 
             <Table.Footer>
               <Table.Row>
-                <Table.HeaderCell colSpan="12">
-                  <Menu pagination>
-                    <Menu.Item as="a" icon>
-                      <Icon name="chevron left" />
-                    </Menu.Item>
-                    <Menu.Item as="a">1</Menu.Item>
-                    <Menu.Item as="a">2</Menu.Item>
-                    <Menu.Item as="a">3</Menu.Item>
-                    <Menu.Item as="a">4</Menu.Item>
-                    <Menu.Item as="a" icon>
-                      <Icon name="chevron right" />
-                    </Menu.Item>
-                  </Menu>
-                </Table.HeaderCell>
+                <Table.HeaderCell colSpan="12"></Table.HeaderCell>
               </Table.Row>
             </Table.Footer>
           </Table>
@@ -74,6 +61,3 @@ class ClientDisplayPage extends React.Component {
 }
 
 export default ClientDisplayPage;
-
-// https://materializecss.com/checkboxes.html for checkboxes
-// Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label.

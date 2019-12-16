@@ -1,9 +1,11 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
 import ClassCalendarPage from "./ClassCalendarPage";
 import ClientDisplayPage from "./ClientDisplayPage";
 import PointOfSalePage from "./PointOfSalePage";
 import Header from "./Header";
+import About from "./About";
+import ClassDescriptions from "./ClassDescriptions";
+import { Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,19 +14,19 @@ class App extends React.Component {
       clients: [
         {
           id: "1",
-          name: "Douglas",
+          name: "Douglas Graves",
           email: "Douglas@mail.com",
           phone: "(123)123-4567"
         },
         {
           id: "2",
-          name: "Lauren",
+          name: "Lauren Musante",
           email: "Lauren@mail.com",
           phone: "(321)123-4567"
         },
         {
           id: "3",
-          name: "Ham",
+          name: "Ham 'Gandalf' Graves",
           email: "Ham@ham.com",
           phone: "(333)666-6666"
         }
@@ -38,6 +40,8 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={ClassCalendarPage} />
+          <Route path="/about" component={About} />
+          <Route path="/descriptions" component={ClassDescriptions} />
           <Route
             path="/clientdisplay"
             render={props => (

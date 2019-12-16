@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -15,13 +16,13 @@ function Header() {
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">About BrainFrame</a>
+              <Link to="/about">About Brainframe</Link>
             </li>
             <li>
-              <a href="badges.html">Class Calendar</a>
+              <Link to="/">Class Calendar</Link>
             </li>
             <li>
-              <a href="collapsible.html">JavaScript</a>
+              <Link to="/descriptions">Classes</Link>
             </li>
           </ul>
         </div>

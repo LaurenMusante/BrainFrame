@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./PointOfSalePage.css";
 
 const classPackages = [
   {
@@ -70,6 +71,7 @@ class PointOfSalePage extends React.Component {
       <div className="ui container">
         <div className="point-of-sale-page">
           <div className="client-details">
+            <p>Purchase class for:</p>
             <h1>{this.state.client.name}</h1>
           </div>
 
@@ -87,6 +89,7 @@ class PointOfSalePage extends React.Component {
                 </div>
               </div>
             </div>
+            <hr />
 
             {this.selectedClassPackage === {} ? null : (
               <div>
@@ -103,10 +106,7 @@ class PointOfSalePage extends React.Component {
                     </label>
                   </div>
                   <div>
-                    <div>
-                      Class Count
-                      {this.state.selectedClassPackage.count}
-                    </div>
+                    <div>{this.state.selectedClassPackage.count}</div>
                   </div>
                   <div>
                     <label>
@@ -120,20 +120,23 @@ class PointOfSalePage extends React.Component {
                     </label>
                   </div>
                   <h3>
-                    Subtotal <span>{this.state.subtotal}</span>
+                    Subtotal <span>${this.state.subtotal}</span>
                   </h3>
                 </div>
                 <h2>
-                  Total <span>{this.state.total}</span>
+                  Total <span>${this.state.total}</span>
                 </h2>
               </div>
             )}
-            <button type="submit">Add Package</button>
+            <hr />
+            <button type="submit" className="ui purple button">
+              Add Package
+            </button>
           </form>
           <br />
-          <Link to="/clientdisplay">BACK</Link>
+          <Link to="/clientdisplay">Go Back</Link>
           <br />
-          <Link to="/">Class Calendar</Link>
+          <Link to="/">Go To Class Calendar</Link>
         </div>
       </div>
     );

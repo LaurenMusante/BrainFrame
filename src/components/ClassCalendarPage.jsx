@@ -15,6 +15,7 @@ const ClassCalendarPage = () => (
         <th className="">Location</th>
       </tr>
     </thead>
+
     <tbody className="">
       <tr className="">
         <td className="">December 16</td>
@@ -35,6 +36,7 @@ const ClassCalendarPage = () => (
         <td className="single line">Emma Stern</td>
         <td className="single line">Mod at 45th</td>
       </tr>
+
       <tr className="">
         <td className="">December 16</td>
         <td className="single line">9am</td>
@@ -48,12 +50,13 @@ const ClassCalendarPage = () => (
             data-position="top center"
             data-variation="wide"
           >
-            Flow
+            Deep Flow
           </div>
         </td>
         <td className="single line">Emma Stern</td>
         <td className="single line">Mod at 45th</td>
       </tr>
+
       <tr className="">
         <td className="">December 16</td>
         <td className="single line">9am</td>
@@ -67,12 +70,13 @@ const ClassCalendarPage = () => (
             data-position="top center"
             data-variation="wide"
           >
-            Flow
+            Deep Flow
           </div>
         </td>
         <td className="single line">Emma Stern</td>
         <td className="single line">Mod at 45th</td>
       </tr>
+
       <tr className="">
         <td className="">December 16</td>
         <td className="single line">9am</td>
@@ -86,12 +90,13 @@ const ClassCalendarPage = () => (
             data-position="top center"
             data-variation="wide"
           >
-            Flow
+            Deep Flow
           </div>
         </td>
         <td className="single line">Emma Stern</td>
         <td className="single line">Mod at 45th</td>
       </tr>
+
       <tr className="">
         <td className="">December 16</td>
         <td className="single line">9am</td>
@@ -105,7 +110,7 @@ const ClassCalendarPage = () => (
             data-position="top center"
             data-variation="wide"
           >
-            Flow
+            Deep Flow
           </div>
         </td>
         <td className="single line">Emma Stern</td>
