@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./ClassDescriptions.css";
+import React from 'react';
+import './ClassDescriptions.css';
 
 const ClassDescriptions = () => {
   return (
@@ -77,7 +76,7 @@ const ClassDescriptions = () => {
                 <span>All Levels</span>
               </div>
               <p>
-                {" "}
+                {' '}
                 In this class the basic, foundational yoga postures are
                 practiced to align, strengthen and promote flexibility in the
                 body. Breathing techniques and meditation are also integrated.
@@ -107,7 +106,7 @@ const ClassDescriptions = () => {
                 natural healing power as you actively nourish and harmonize the
                 body's vital life force or chi. As the whole body rests and
                 opens with long held poses, the natural healing power of chi is
-                used to rejuvenate and repair the area of focus.{" "}
+                used to rejuvenate and repair the area of focus.{' '}
               </p>
             </div>
           </div>
@@ -127,7 +126,7 @@ const ClassDescriptions = () => {
                 comfortable setting. When the mind quiets down and your body
                 resolves patterns of tension, then harmony and well-being are
                 naturally restored. Not everyone can get up and down off the
-                floor easily making traditional yoga classes difficult.{" "}
+                floor easily making traditional yoga classes difficult.{' '}
               </p>
             </div>
           </div>
@@ -142,7 +141,7 @@ const ClassDescriptions = () => {
                 <span>All Levels</span>
               </div>
               <p>
-                {" "}
+                {' '}
                 A modern-day movement with lineage inspired teachings. This
                 class starts with a slow flowing movement to get the body warm
                 and the mind focused. Yin poses, passive stretches held for
@@ -186,7 +185,7 @@ const ClassDescriptions = () => {
                 <span>Beginners Welcome</span>
               </div>
               <p>
-                {" "}
+                {' '}
                 The beginner class series introduces the history of yoga,
                 fundamental principles of alignment, and breath work. Students
                 will be introduced to yoga postures through step-by-step verbal

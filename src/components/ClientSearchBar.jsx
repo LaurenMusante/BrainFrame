@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class ClientSearchBar extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class ClientSearchBar extends React.Component {
             <input
               type="text"
               onChange={this.onInputChange}
-              style={{ boxSizing: "border-box" }}
+              style={{ boxSizing: 'border-box' }}
             />
           </div>
         </form>

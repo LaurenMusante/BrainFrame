@@ -1,23 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./PointOfSalePage.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './PointOfSalePage.css';
 
 const classPackages = [
   {
     id: 1,
-    name: "1 class",
+    name: '1 class',
     count: 1,
     price: 20
   },
   {
     id: 2,
-    name: "5 classes",
+    name: '5 classes',
     count: 5,
     price: 90
   },
   {
     id: 3,
-    name: "10 classes",
+    name: '10 classes',
     count: 10,
     price: 180
   }
@@ -60,15 +60,15 @@ class PointOfSalePage extends React.Component {
     let quantity = this.state.quantity;
     let total = price * quantity;
     console.log(total);
-    console.log("submit package details");
+    console.log('submit package details');
   }
 
   handleSelectChange() {
-    console.log("select changed");
+    console.log('select changed');
   }
 
   handleOnChange() {
-    console.log("handle input change");
+    console.log('handle input change');
   }
 
   render() {

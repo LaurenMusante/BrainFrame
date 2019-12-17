@@ -1,7 +1,6 @@
-import React from "react";
-import { Icon, Label, Menu, Table } from "semantic-ui-react";
-import { Link } from "react-router-dom";
-import "./ClassCalendarPage.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './ClassCalendarPage.css';
 
 const ClassCalendarPage = () => (
   <div>

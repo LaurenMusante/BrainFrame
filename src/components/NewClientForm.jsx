@@ -1,6 +1,5 @@
-import React from "react";
-import { v4 } from "uuid";
-import { Redirect } from "react-router-dom";
+import React from 'react';
+import { v4 } from 'uuid';
 
 class NewClientForm extends React.Component {
   constructor(props) {
@@ -17,10 +16,10 @@ class NewClientForm extends React.Component {
       phone: this.refs.phone.value,
       id: v4()
     });
-    this.refs.name.value = "";
-    this.refs.email.value = "";
-    this.refs.phone.value = "";
-    this.props.history.push("/clientdisplay");
+    this.refs.name.value = '';
+    this.refs.email.value = '';
+    this.refs.phone.value = '';
+    this.props.history.push('/clientdisplay');
   }
 
   render() {

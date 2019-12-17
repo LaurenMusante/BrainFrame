@@ -1,6 +1,6 @@
-import React from "react";
-import "./Header.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -8,8 +8,8 @@ function Header() {
       <nav>
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">
-            {" "}
-            <i className="material-icons" style={{ fontSize: "40px" }}>
+            {' '}
+            <i className="material-icons" style={{ fontSize: '40px' }}>
               blur_on
             </i>
             BRAINFRAME

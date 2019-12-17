@@ -1,14 +1,14 @@
-import React from "react";
-import ClientSearchBar from "./ClientSearchBar";
-import { Icon, Menu, Table } from "semantic-ui-react";
-import { Link } from "react-router-dom";
-import "./ClientDisplayPage.css";
+import React from 'react';
+import ClientSearchBar from './ClientSearchBar';
+import { Table } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import './ClientDisplayPage.css';
 
 class ClientDisplayPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentSearch: "",
+      currentSearch: '',
       searchResults: []
     };
     this.handleUpdateSearch = this.handleUpdateSearch.bind(this);
@@ -17,7 +17,7 @@ class ClientDisplayPage extends React.Component {
   handleUpdateSearch(search) {
     let names = [];
     this.props.clients.forEach(client => {
-      if (client.name.match(new RegExp(search, "i"))) {
+      if (client.name.match(new RegExp(search, 'i'))) {
         names.push(client);
       }
     });
@@ -63,7 +63,7 @@ class ClientDisplayPage extends React.Component {
   render() {
     return (
       <div className="clientDisplay">
-        <div className="ui container" style={{ margin: "24px" }}>
+        <div className="ui container" style={{ margin: '24px' }}>
           <ClientSearchBar onUpdateSearch={this.handleUpdateSearch} />
         </div>
         <div className="clientTable">
