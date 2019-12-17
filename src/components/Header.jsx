@@ -19,10 +19,10 @@ function Header() {
               <Link to="/about">About Brainframe</Link>
             </li>
             <li>
-              <Link to="/">Class Calendar</Link>
+              <Link to="/">Class Schedule</Link>
             </li>
             <li>
-              <Link to="/descriptions">Classes</Link>
+              <Link to="/descriptions">Class Descriptions</Link>
             </li>
           </ul>
         </div>

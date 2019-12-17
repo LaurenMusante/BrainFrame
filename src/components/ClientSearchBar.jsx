@@ -4,10 +4,11 @@ class ClientSearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.onInputChange = this.onInputChange.bind(this);
   }
 
   onInputChange(event) {
-    console.log(event.target.value);
+    this.props.onUpdateSearch(event.target.value);
   }
 
   render() {

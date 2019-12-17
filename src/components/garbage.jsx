@@ -74,3 +74,31 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script> */
 }
+
+{
+  /* 
+              <div className="ui simple dropdown item">
+                Package Options
+                <i className="dropdown icon"></i>
+                <div className="menu">
+                  {classPackages.map(({ id, name }) => (
+                    <div className="item" key={id} data-value={id}>
+                      {name}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <hr />
+
+
+            <div class="ui selection dropdown">
+  <input type="hidden" name="gender">
+  <i class="dropdown icon"></i>
+  <div class="default text">Gender</div>
+  <div class="menu">
+    <div class="item" data-value="1">Male</div>
+    <div class="item" data-value="0">Female</div>
+  </div>
+</div> */
+}

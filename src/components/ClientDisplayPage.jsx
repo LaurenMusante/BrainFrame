@@ -6,12 +6,28 @@ import { Link } from "react-router-dom";
 class ClientDisplayPage extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      currentSearch: "",
+      clients: {}
+    };
+    this.handleUpdateSearch = this.handleUpdateSearch.bind(this);
   }
+  handleUpdateSearch(search) {
+    let names = [];
+    this.props.clients.forEach(client => {
+      if (client.name.match(search)) {
+        names.push(client);
+      }
+    });
+    this.setState({ clients: names });
+    console.log(this.state.clients);
+  }
+
   render() {
     return (
       <div className="clientDisplay">
         <div className="ui container" style={{ margin: "24px" }}>
-          <ClientSearchBar />
+          <ClientSearchBar onUpdateSearch={this.handleUpdateSearch} />
         </div>
         <div className="clientTable">
           <Table celled>
