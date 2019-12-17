@@ -61,7 +61,17 @@ class App extends React.Component {
           <Route exact path="/" component={ClassCalendarPage} />
           <Route path="/about" component={About} />
           <Route path="/descriptions" component={ClassDescriptions} />
-          <Route path="/newclient" component={NewClientForm} />
+          <Route
+            path="/newclient"
+            render={props => (
+              <NewClientForm
+                {...props}
+                onNewClientSubmission={client =>
+                  this.state.clients.push(client)
+                }
+              />
+            )}
+          />
           <Route
             path="/clientdisplay"
             render={props => (
