@@ -2,6 +2,7 @@ import React from "react";
 import ClientSearchBar from "./ClientSearchBar";
 import { Icon, Menu, Table } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import "./ClientDisplayPage.css";
 
 class ClientDisplayPage extends React.Component {
   constructor(props) {
@@ -58,7 +59,9 @@ class ClientDisplayPage extends React.Component {
                     </form>
                   </Table.Cell>
                   <Table.Cell>
-                    <Link to={`/pos/${id}`}>BUY CLASS</Link>
+                    <button className="ui purple button">
+                      <Link to={`/pos/${id}`}>BUY CLASS</Link>
+                    </button>
                   </Table.Cell>
                 </Table.Row>
               ))}

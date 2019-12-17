@@ -26,7 +26,7 @@ class App extends React.Component {
         },
         {
           id: "3",
-          name: "Ham 'Gandalf' Graves",
+          name: "Gandalf 'Ham' Graves",
           email: "Ham@ham.com",
           phone: "(333)666-6666"
         },
