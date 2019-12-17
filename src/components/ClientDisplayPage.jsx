@@ -52,9 +52,7 @@ class ClientDisplayPage extends React.Component {
           </form>
         </Table.Cell>
         <Table.Cell>
-          <button className="ui purple button">
-            <Link to={`/pos/${id}`}>BUY CLASS</Link>
-          </button>
+          <Link to={`/pos/${id}`}>BUY CLASS</Link>
         </Table.Cell>
       </Table.Row>
     ));

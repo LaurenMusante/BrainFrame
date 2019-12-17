@@ -120,11 +120,11 @@ class PointOfSalePage extends React.Component {
                     </label>
                   </div>
                   <h3>
-                    Subtotal <span>{this.state.subtotal}</span>
+                    Subtotal <span>${this.state.subtotal}</span>
                   </h3>
                 </div>
                 <h2>
-                  Total <span>{this.state.total}</span>
+                  Total <span>${this.state.total}</span>
                 </h2>
               </div>
             )}
