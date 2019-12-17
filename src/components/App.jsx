@@ -5,6 +5,7 @@ import PointOfSalePage from "./PointOfSalePage";
 import Header from "./Header";
 import About from "./About";
 import ClassDescriptions from "./ClassDescriptions";
+import NewClientForm from "./NewClientForm";
 import { Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -60,6 +61,7 @@ class App extends React.Component {
           <Route exact path="/" component={ClassCalendarPage} />
           <Route path="/about" component={About} />
           <Route path="/descriptions" component={ClassDescriptions} />
+          <Route path="/newclient" component={NewClientForm} />
           <Route
             path="/clientdisplay"
             render={props => (

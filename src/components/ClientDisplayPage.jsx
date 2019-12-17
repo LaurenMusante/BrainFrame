@@ -9,19 +9,55 @@ class ClientDisplayPage extends React.Component {
     super(props);
     this.state = {
       currentSearch: "",
-      clients: {}
+      searchResults: []
     };
     this.handleUpdateSearch = this.handleUpdateSearch.bind(this);
   }
+
   handleUpdateSearch(search) {
     let names = [];
     this.props.clients.forEach(client => {
-      if (client.name.match(search)) {
+      if (client.name.match(new RegExp(search, "i"))) {
         names.push(client);
       }
     });
-    this.setState({ clients: names });
-    console.log(this.state.clients);
+    this.setState({
+      currentSearch: search,
+      searchResults: names
+    });
+  }
+
+  renderClients() {
+    const clients = this.state.searchResults.length
+      ? this.state.searchResults
+      : this.props.clients;
+
+    if (this.state.currentSearch && !this.state.searchResults.length) {
+      return <Link to="/newclient">Add new client</Link>;
+    }
+
+    return clients.map(({ id, name, email, phone }) => (
+      <Table.Row key={id}>
+        <Table.Cell>{name}</Table.Cell>
+        <Table.Cell>{email}</Table.Cell>
+        <Table.Cell>{phone}</Table.Cell>
+        <Table.Cell>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Yes</span>
+              </label>
+            </p>
+          </form>
+        </Table.Cell>
+        <Table.Cell>
+          <button className="ui purple button">
+            <Link to={`/pos/${id}`}>BUY CLASS</Link>
+          </button>
+        </Table.Cell>
+      </Table.Row>
+    ));
   }
 
   render() {
@@ -42,30 +78,7 @@ class ClientDisplayPage extends React.Component {
               </Table.Row>
             </Table.Header>
 
-            <Table.Body>
-              {this.props.clients.map(({ id, name, email, phone }) => (
-                <Table.Row key={id}>
-                  <Table.Cell>{name}</Table.Cell>
-                  <Table.Cell>{email}</Table.Cell>
-                  <Table.Cell>{phone}</Table.Cell>
-                  <Table.Cell>
-                    <form action="#">
-                      <p>
-                        <label>
-                          <input type="checkbox" />
-                          <span>Yes</span>
-                        </label>
-                      </p>
-                    </form>
-                  </Table.Cell>
-                  <Table.Cell>
-                    <button className="ui purple button">
-                      <Link to={`/pos/${id}`}>BUY CLASS</Link>
-                    </button>
-                  </Table.Cell>
-                </Table.Row>
-              ))}
-            </Table.Body>
+            <Table.Body>{this.renderClients()}</Table.Body>
 
             <Table.Footer>
               <Table.Row>
