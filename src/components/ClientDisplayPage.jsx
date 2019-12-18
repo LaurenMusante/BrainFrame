@@ -37,7 +37,7 @@ class ClientDisplayPage extends React.Component {
 
     return clients.map(({ id, name, email, phone }) => (
       <tr key={id}>
-        <td>{name}</td>
+        <td id="fullName">{name}</td>
         <td>{email}</td>
         <td>{phone}</td>
         <td>

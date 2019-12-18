@@ -12,3 +12,8 @@ a {
 body {
   background-color: #d5c3aa;
 }
+
+#fullName {
+  font-weight: bold;
+  font-size: 18px;
+}

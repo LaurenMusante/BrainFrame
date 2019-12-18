@@ -29,6 +29,10 @@ class PointOfSalePage extends React.Component {
     }
   }
 
+  // handlePurchase(){
+  //   this.props.selectedClassPackage
+  // }
+
   render() {
     return (
       <div>
@@ -48,7 +52,9 @@ class PointOfSalePage extends React.Component {
               }}
             >
               <option value="title">Class Packages</option>
-              <option value="1">1 Class</option>
+              <option value="1" ref="1Class">
+                1 Class
+              </option>
               <option value="2">5 Classes</option>
               <option value="3">10 Classes</option>
               <option value="4">One Month</option>
