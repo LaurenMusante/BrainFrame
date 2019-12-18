@@ -26,8 +26,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -46,8 +46,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -66,8 +66,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -86,8 +86,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -106,8 +106,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -125,8 +125,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -144,8 +144,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -164,8 +164,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -184,8 +184,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -204,8 +204,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -223,8 +223,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -243,8 +243,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -263,8 +263,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -283,8 +283,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
@@ -303,8 +303,8 @@ const ClassCalendarPage = () => (
           </td>
           <td className="single line">
             <div
-              className="ui button"
-              data-tooltip="Brief class description"
+              className="ui purple button"
+              data-tooltip="In this class the basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. "
               data-position="top center"
               data-variation="wide"
             >
