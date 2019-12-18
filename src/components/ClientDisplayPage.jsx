@@ -37,11 +37,12 @@ class ClientDisplayPage extends React.Component {
     }
 
     return clients.map(({ id, name, email, phone }) => (
-      <Table.Row key={id}>
-        <Table.Cell>{name}</Table.Cell>
-        <Table.Cell>{email}</Table.Cell>
-        <Table.Cell>{phone}</Table.Cell>
-        <Table.Cell>
+      <tr>
+        <td>{name}</td>
+        <td>{email}</td>
+        <td>{phone}</td>
+        <td>
+          {' '}
           <form action="#">
             <p>
               <label>
@@ -50,11 +51,11 @@ class ClientDisplayPage extends React.Component {
               </label>
             </p>
           </form>
-        </Table.Cell>
-        <Table.Cell>
+        </td>
+        <td>
           <Link to={`/pos/${id}`}>BUY CLASS</Link>
-        </Table.Cell>
-      </Table.Row>
+        </td>
+      </tr>
     ));
   }
 
@@ -64,27 +65,19 @@ class ClientDisplayPage extends React.Component {
         <div className="ui container" style={{ margin: '24px' }}>
           <ClientSearchBar onUpdateSearch={this.handleUpdateSearch} />
         </div>
-        <div className="clientTable">
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Name</Table.HeaderCell>
-                <Table.HeaderCell>Email</Table.HeaderCell>
-                <Table.HeaderCell>Phone</Table.HeaderCell>
-                <Table.HeaderCell>Signed In</Table.HeaderCell>
-                <Table.HeaderCell>Purchase</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Signed In</th>
+              <th>Purchase</th>
+            </tr>
+          </thead>
 
-            <Table.Body>{this.renderClients()}</Table.Body>
-
-            <Table.Footer>
-              <Table.Row>
-                <Table.HeaderCell colSpan="12"></Table.HeaderCell>
-              </Table.Row>
-            </Table.Footer>
-          </Table>
-        </div>
+          <tbody> {this.renderClients()}</tbody>
+        </table>
       </div> //clientDisplay
     );
   }

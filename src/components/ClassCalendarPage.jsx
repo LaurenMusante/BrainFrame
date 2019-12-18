@@ -19,7 +19,7 @@ const ClassCalendarPage = () => (
 
       <tbody className="">
         <tr className="">
-          <td className="">December 16</td>
+          <td className="date">December 16</td>
           <td className="single line">9:00am-10:00am</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -39,7 +39,7 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 16</td>
+          <td className="date">December 16</td>
           <td className="single line">10:00am-11:00am</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -51,7 +51,7 @@ const ClassCalendarPage = () => (
               data-position="top center"
               data-variation="wide"
             >
-              Deep Flow
+              Flow
             </div>
           </td>
           <td className="single line">Emma Stern</td>
@@ -59,7 +59,7 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 16</td>
+          <td className="date">December 16</td>
           <td className="single line">11:00am-12:00pm</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -71,7 +71,7 @@ const ClassCalendarPage = () => (
               data-position="top center"
               data-variation="wide"
             >
-              Deep Flow
+              Ashtanga
             </div>
           </td>
           <td className="single line">Emma Stern</td>
@@ -79,7 +79,7 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 16</td>
+          <td className="date">December 16</td>
           <td className="single line">12:00pm-1:00pm</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -91,7 +91,7 @@ const ClassCalendarPage = () => (
               data-position="top center"
               data-variation="wide"
             >
-              Lunch Flow
+              TRX
             </div>
           </td>
           <td className="single line">Emma Stern</td>
@@ -99,7 +99,7 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 16</td>
+          <td className="date">December 16</td>
           <td className="single line">2:00pm-3:00pm</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -118,7 +118,7 @@ const ClassCalendarPage = () => (
           <td className="single line">Mod at 45th</td>
         </tr>
         <tr className="">
-          <td className="">December 17</td>
+          <td className="date">December 17</td>
           <td className="single line">9:00am-10:00am</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -130,14 +130,14 @@ const ClassCalendarPage = () => (
               data-position="top center"
               data-variation="wide"
             >
-              Deep Flow
+              Flow
             </div>
           </td>
           <td className="single line">Emma Stern</td>
           <td className="single line">Mod at 45th</td>
         </tr>
         <tr className="">
-          <td className="">December 17</td>
+          <td className="date">December 17</td>
           <td className="single line">10:00am-11:00am</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -157,7 +157,106 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 17</td>
+          <td className="date">December 17</td>
+          <td className="single line">11:00am-12:00pm</td>
+          <td className="single line">
+            <Link to="/clientdisplay">Sign In</Link>
+          </td>
+          <td className="single line">
+            <div
+              className="ui button"
+              data-tooltip="Brief class description"
+              data-position="top center"
+              data-variation="wide"
+            >
+              Lunch Flow
+            </div>
+          </td>
+          <td className="single line">Emma Stern</td>
+          <td className="single line">Mod at 45th</td>
+        </tr>
+
+        <tr className="">
+          <td className="date">December 17</td>
+          <td className="single line">12:00pm-1:00pm</td>
+          <td className="single line">
+            <Link to="/clientdisplay">Sign In</Link>
+          </td>
+          <td className="single line">
+            <div
+              className="ui button"
+              data-tooltip="Brief class description"
+              data-position="top center"
+              data-variation="wide"
+            >
+              Yin
+            </div>
+          </td>
+          <td className="single line">Emma Stern</td>
+          <td className="single line">Mod at 45th</td>
+        </tr>
+
+        <tr className="">
+          <td className="date">December 17</td>
+          <td className="single line">2:00pm-3:00pm</td>
+          <td className="single line">
+            <Link to="/clientdisplay">Sign In</Link>
+          </td>
+          <td className="single line">
+            <div
+              className="ui button"
+              data-tooltip="Brief class description"
+              data-position="top center"
+              data-variation="wide"
+            >
+              Ashtanga
+            </div>
+          </td>
+          <td className="single line">Emma Stern</td>
+          <td className="single line">Mod at 45th</td>
+        </tr>
+        <tr className="">
+          <td className="date">December 18</td>
+          <td className="single line">9:00am-10:00am</td>
+          <td className="single line">
+            <Link to="/clientdisplay">Sign In</Link>
+          </td>
+          <td className="single line">
+            <div
+              className="ui button"
+              data-tooltip="Brief class description"
+              data-position="top center"
+              data-variation="wide"
+            >
+              Trx
+            </div>
+          </td>
+          <td className="single line">Emma Stern</td>
+          <td className="single line">Mod at 45th</td>
+        </tr>
+
+        <tr className="">
+          <td className="date">December 18</td>
+          <td className="single line">10:00am-11:00am</td>
+          <td className="single line">
+            <Link to="/clientdisplay">Sign In</Link>
+          </td>
+          <td className="single line">
+            <div
+              className="ui button"
+              data-tooltip="Brief class description"
+              data-position="top center"
+              data-variation="wide"
+            >
+              Deep Flow
+            </div>
+          </td>
+          <td className="single line">Emma Stern</td>
+          <td className="single line">Mod at 45th</td>
+        </tr>
+
+        <tr className="">
+          <td className="date">December 18</td>
           <td className="single line">11:00am-12:00pm</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -177,7 +276,7 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 17</td>
+          <td className="date">December 18</td>
           <td className="single line">12:00pm-1:00pm</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -197,7 +296,7 @@ const ClassCalendarPage = () => (
         </tr>
 
         <tr className="">
-          <td className="">December 17</td>
+          <td className="date">December 18</td>
           <td className="single line">2:00pm-3:00pm</td>
           <td className="single line">
             <Link to="/clientdisplay">Sign In</Link>
@@ -209,7 +308,7 @@ const ClassCalendarPage = () => (
               data-position="top center"
               data-variation="wide"
             >
-              Deep Flow
+              Beginner's Yoga
             </div>
           </td>
           <td className="single line">Emma Stern</td>
