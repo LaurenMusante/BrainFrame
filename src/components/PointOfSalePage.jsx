@@ -80,6 +80,7 @@ class PointOfSalePage extends React.Component {
           </div>
 
           <form onSubmit={this.handleSubmit}>
+            {' '}
             <div className="ui compact menu">
               <div className="ui simple dropdown item">
                 Package Options
@@ -93,7 +94,6 @@ class PointOfSalePage extends React.Component {
                 </div>
               </div>
             </div>
-
             {this.selectedClassPackage === {} ? null : (
               <div>
                 <div className="pricingDetails">
@@ -119,9 +119,6 @@ class PointOfSalePage extends React.Component {
                       />
                     </label>
                   </div>
-                  <h3>
-                    Subtotal <span>${this.state.subtotal}</span>
-                  </h3>
                 </div>
                 <h2>
                   Total <span>${this.state.total}</span>
