@@ -1,7 +1,6 @@
 import React from 'react';
-import ClientSearchBar from './ClientSearchBar';
-import { Table } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import ClientSearchBar from './ClientSearchBar';
 import './ClientDisplayPage.css';
 
 class ClientDisplayPage extends React.Component {
@@ -37,7 +36,7 @@ class ClientDisplayPage extends React.Component {
     }
 
     return clients.map(({ id, name, email, phone }) => (
-      <tr>
+      <tr key={id}>
         <td>{name}</td>
         <td>{email}</td>
         <td>{phone}</td>

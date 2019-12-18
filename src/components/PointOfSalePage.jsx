@@ -38,13 +38,22 @@ class PointOfSalePage extends React.Component {
         </div>
         <div className="dropdownForm">
           <form className="form" action="">
-            <select className="ui dropdown">
+            <select
+              className="ui dropdown"
+              style={{
+                display: 'block',
+                width: '30%',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+              }}
+            >
               <option value="title">Class Packages</option>
               <option value="1">1 Class</option>
               <option value="2">5 Classes</option>
               <option value="3">10 Classes</option>
               <option value="4">One Month</option>
             </select>
+            <br />
             <hr />
             <button className="button">Purchase</button>
           </form>
@@ -53,4 +62,5 @@ class PointOfSalePage extends React.Component {
     );
   }
 }
+
 export default PointOfSalePage;
