@@ -78,7 +78,7 @@ class ClientDisplayPage extends React.Component {
 
           <tbody> {this.renderClients()}</tbody>
         </table>
-      </div> //clientDisplay
+      </div>
     );
   }
 }

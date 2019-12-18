@@ -1,36 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './PointOfSalePage.css';
-
-const classPackages = [
-  {
-    id: 1,
-    name: '1 class',
-    count: 1,
-    price: 20
-  },
-  {
-    id: 2,
-    name: '5 classes',
-    count: 5,
-    price: 90
-  },
-  {
-    id: 3,
-    name: '10 classes',
-    count: 10,
-    price: 180
-  }
-];
 
 class PointOfSalePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quantity: 1,
-      selectedClassPackage: {},
-      subtotal: 0, //selectedClassPackage price * quantity
-      total: 0, //adding tax or discoumt to subtotal
       client: {}
     };
   }
@@ -55,97 +29,28 @@ class PointOfSalePage extends React.Component {
     }
   }
 
-  handleSubmit() {
-    let price = this.state.selectedClassPackage.price;
-    let quantity = this.state.quantity;
-    let total = price * quantity;
-    console.log(total);
-    console.log('submit package details');
-  }
-
-  handleSelectChange() {
-    console.log('select changed');
-  }
-
-  handleOnChange() {
-    console.log('handle input change');
-  }
-
   render() {
     return (
-      <div className="ui container">
-        <div className="point-of-sale-page">
-          <div className="client-details">
-            <h1>{this.state.client.name}</h1>
-          </div>
-
-          <form onSubmit={this.handleSubmit}>
-            {' '}
-            <div className="ui compact menu">
-              <div className="ui simple dropdown item">
-                Package Options
-                <i className="dropdown icon"></i>
-                <div className="menu">
-                  {classPackages.map(({ id, name }) => (
-                    <div className="item" key={id} data-value={id}>
-                      {name}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            {this.selectedClassPackage === {} ? null : (
-              <div>
-                <div className="pricingDetails">
-                  <div>
-                    <label>
-                      Price
-                      <input
-                        type="text"
-                        value={this.state.selectedClassPackage.price}
-                        name="price"
-                        onChange={this.handleOnChange}
-                      />
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      Quantity
-                      <input
-                        type="number"
-                        value={this.state.quantity}
-                        name="quantity"
-                        onChange={this.handleOnChange}
-                      />
-                    </label>
-                  </div>
-                </div>
-                <h2>
-                  Total <span>${this.state.total}</span>
-                </h2>
-              </div>
-            )}
-            <button type="submit">Add Package</button>
+      <div>
+        <div className="client-details">
+          <h4>Purchase class for:</h4>
+          <h1>{this.state.client.name}</h1>
+        </div>
+        <div className="dropdownForm">
+          <form className="form" action="">
+            <select className="ui dropdown">
+              <option value="title">Class Packages</option>
+              <option value="1">1 Class</option>
+              <option value="2">5 Classes</option>
+              <option value="3">10 Classes</option>
+              <option value="4">One Month</option>
+            </select>
+            <hr />
+            <button className="button">Purchase</button>
           </form>
-          <br />
-          <Link to="/clientdisplay">BACK</Link>
-          <br />
-          <Link to="/">Class Calendar</Link>
         </div>
       </div>
     );
   }
 }
-
 export default PointOfSalePage;
-
-/*
-// conditional statement
-if (selectedClassPackage === {}) {
-    // don't render anything
-} else {
-    // render something
-}
-// ternary operator
-(selectedClassPackage === {}) ? 'do not render' : 'render'
-*/

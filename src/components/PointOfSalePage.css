@@ -6,7 +6,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Didact Gothic', sans-serif;
   text-align: center;
 }
@@ -25,4 +26,35 @@ label {
 
 body {
   background-color: #d5c3aa;
+}
+
+.dropdownForm {
+  display: block;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  margin: -20px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  border-radius: 28px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.form {
+  height: 40px;
+  width: 200px;
+  margin: -20px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.dropdownForm {
+  margin-top: 5%;
 }
