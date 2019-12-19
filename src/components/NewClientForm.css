@@ -1,0 +1,13 @@
+.addClientButton {
+  height: 50px;
+  width: 100px;
+  margin: -20px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  border-radius: 28px;
+  font-family: 'Didact Gothic', sans-serif;
+}

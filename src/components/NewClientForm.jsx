@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 } from 'uuid';
+import './NewClientForm.css';
 
 class NewClientForm extends React.Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class NewClientForm extends React.Component {
               placeholder="phone number"
             ></input>
           </div>
-          <button type="submit">Add Client</button>
+          <button type="submit" className="addClientButton">Add Client</button>
         </form>
       </div>
     );
